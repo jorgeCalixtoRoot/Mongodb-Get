@@ -9,9 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
     "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mogodb": "^0.0.1-security",
     "mongodb": "^7.1.0"
   }
 }
