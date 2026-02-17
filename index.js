@@ -19,10 +19,10 @@ app.get('/panes',async (req, res) => {
     try {
         await client.connect()
         const db = client.db('Panaderia')
-        const productos = db.collection('Panes')
-        const lista = await productos.find({}).toArray()
+        const collection = db.collection('Panes')
+        const list = await collection.find({}).toArray()
 
-        res.json({success: true, data: lista})
+        res.json({success: true, data: list})
 
     } catch (error) {
         res.status(500).json({success: false, message: error.message})
